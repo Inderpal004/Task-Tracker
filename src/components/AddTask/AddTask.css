@@ -1,0 +1,89 @@
+.add-task-page {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00000090;
+}
+
+.add-task-container {
+  background: #ffff;
+  width: 350px;
+  min-height: 420px;
+  border-radius: 5px;
+}
+
+.add-task-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.cancel-btn {
+  background: transparent;
+  padding: 4px 8px;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid #000000;
+  outline: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: #c0c0c0;
+}
+
+.add-task-details {
+  padding: 10px 20px;
+}
+
+.project-name-label,
+.task-desc-label {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#project-name {
+  width: 100%;
+  margin: 5px 0px 20px 0px;
+  padding: 5px 10px;
+  font-size: 14px;
+  outline: none;
+}
+
+#task-desc {
+  width: 100%;
+  min-height: 150px;
+  margin: 5px 0px 10px 0px;
+  padding: 5px 10px;
+  font-size: 14px;
+  background: #edeaea;
+  outline: none;
+  resize: none;
+}
+
+.add-task-btn-div {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+}
+
+.add-task {
+  background: #933fe1;
+  color: #ffff;
+  padding: 5px 10px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  font-size: 15px;
+}
