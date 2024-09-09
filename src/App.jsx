@@ -17,7 +17,6 @@ function App() {
     const savedCompletedProjects = localStorage.getItem('completeProject');
     return savedCompletedProjects ? JSON.parse(savedCompletedProjects) : [];
   });
-  const [isComplete, setIsComplete] = useState(false);
 
   useEffect(() => {
     localStorage.setItem('allProjects', JSON.stringify(allProjects));
@@ -59,7 +58,6 @@ function App() {
     const updatedProjects = allProjects.filter((_, i) => i !== index);
     setAllProjects(updatedProjects);
     setCompleteProject((prevCompleted) => [...prevCompleted, ...completedProjects]);
-    setIsComplete(true);
     toast.success("Task completed successfully");
   };
 
@@ -89,7 +87,8 @@ function App() {
                     index={index} 
                     dltTask={dltTask} 
                     editTask={editTask} 
-                    handleComplete={handleComplete}
+                    handleComplete={handleComplete} 
+                    isComplete={false}  
                   />
                 ))
               )}
@@ -110,7 +109,7 @@ function App() {
                     key={index} 
                     title={item.title} 
                     desc={item.desc} 
-                    isComplete={isComplete}
+                    isComplete={true}  
                   />
                 ))
               )}
