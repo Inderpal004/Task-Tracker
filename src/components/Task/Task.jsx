@@ -22,7 +22,7 @@ export default function Task({ title, desc, index, dltTask, editTask, handleComp
         )}
 
         {isComplete && (
-          <button className="completed-btn-color" disabled>Task Completed</button>
+          <button className="complete-btn completed-btn-color" disabled>Task Completed</button>
         )}
       </div>
     </div>
